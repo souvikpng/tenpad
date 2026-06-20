@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tenpad"
+version = "0.1.0"
+description = "Toggle a right-hand keyboard cluster into numpad keys."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["evdev>=1.7"]
+
+[project.scripts]
+tenpad = "tenpad.cli:main"
+
+[tool.setuptools]
+packages = ["tenpad"]
